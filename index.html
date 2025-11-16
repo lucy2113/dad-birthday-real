@@ -1,6 +1,7 @@
 <html lang='en'>
 <head>
-    <style>
+    <style> 
+    /*css stuff*/
         *{
             padding: 0;
             margin: 0;
@@ -85,6 +86,12 @@
             font-size: 60px;
             color:rgb(255, 255, 134);
         }
+        #birthdaytext{
+            font-family: "Edu VIC WA NT Hand", cursive;
+            font-optical-sizing: auto;
+            font-size: 30px;
+            color:rgb(255, 255, 255);
+        }
 
     </style>
 
@@ -102,6 +109,12 @@
                 document.getElementById("hb-text").classList.add("pop");
             }
         }
+        function GoToPage3() {
+                document.getElementById('c1').style.display = 'none';
+                document.getElementById('c2').style.display = 'block';
+                document.getElementById('c2').classList.add('fade-in');
+            }
+
     </script>
 
     <link rel='preconnect' href='https://fonts.googleapis.com'>
@@ -113,6 +126,7 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width,initial-scale=1'>
 
+    <!--html stuff-->
     <title>HTML</title>
 </head>
 
@@ -131,16 +145,29 @@
     <!-- second page of msg -->
     <div class='contant' id="c1">
         <center>
-            <!-- <h1>❤️</h1> -->
             <h1 class='heart'>❤️👨🏻‍💻</h1> 
             <br>
             <br>
             <br>
-            <h1 id="hb-text">HAPPY 49th BIRTHDAY!</h1>
+            <h1 id="hb-text" onclick="GoToPage3()">HAPPY 51th BIRTHDAY!</h1>
             <h2 id='addname'></h2>
             <br>
             <br>
             <img src="IMG_8007.png" class="heart" width = '100'>
+        </center>
+    </div>
+    
+    <!--third page-->
+    <div class="contant" id ='c2'>
+        <center>
+            <h1 class="heart">🎉 MORE SURPRISES 🎉</h1>
+            <br>
+            <br>
+            <p id='birthdaytext'> 爸爸生日快乐！这是一张晚到的生日祝福 但是今年我想用一种不同的形式去祝福你，可能也是对你来说更熟悉的形式。<br> 
+                虽然我还没学到java，但在你生日的前一天我们学了html，所以就想应用一下。<br> 希望2025年对你来说都是顺利的 然后2026年也工作顺利 一切都好。
+                <br> 我可能不在家里的时间更多一点 但是会尽量回家看看 希望你跟妈妈都照顾好身体 照顾好弟弟。
+                <br> 感谢你一直以来都支持和鼓励 包括经济资助 我以后一定会赚更多的钱的！现在我只能好好学习 向你们看齐。希望49的你能找到更多乐趣 更多体验和更多美好的时光。
+                <br> Lucy 芊芊❤️ </p>
         </center>
     </div>
 </body>
